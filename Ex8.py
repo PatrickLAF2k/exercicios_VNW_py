@@ -4,3 +4,14 @@
 # Exemplo:
 # entrada = "radar"
 # Saída: True
+
+def palindromo(palavra):
+    palavraReversa = "".join(reversed(palavra))
+    
+    if palavra == palavraReversa:
+        return True
+    else:
+        return False
+    
+palavra = input("Digite uma palavra: ")
+print(palindromo(palavra))
